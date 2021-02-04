@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "image": "https://randomuser.me/api/portraits/men/96.jpg",
+    "first_name": "Don",
+    "last_name": "Olson",
+    "department": "Sales",
+    "email": "don.olson@example.com",
+    "phone": "(640)-944-5067"
+  },
+  {
+    "id": 2,
+    "image": "https://randomuser.me/api/portraits/men/18.jpg",
+    "first_name": "Ramon",
+    "last_name": "Morales",
+    "department": "Sales",
+    "email": "ramon.morales@example.com",
+    "phone": "(105)-000-7001"
+  },
+  {
+    "id": 3,
+    "image": "https://randomuser.me/api/portraits/women/51.jpg",
+    "first_name": "Leah",
+    "last_name": "Leah",
+    "department": "Marketing",
+    "email": "leah.russell@example.com",
+    "phone": "555-321-2345"
+  },
+  {
+    "id": 4,
+    "image": "https://randomuser.me/api/portraits/women/90.jpg",
+    "first_name": "Bernice",
+    "last_name": "Davis",
+    "department": "Design",
+    "email": "bernice.davis@example.com",
+    "phone": "(055)-906-2516"
+  },
+  {
+    "id": 5,
+    "image": "https://randomuser.me/api/portraits/women/74.jpg",
+    "first_name": "Victoria",
+    "last_name": "Ward",
+    "department": "Executive",
+    "email": "victoria.ward@example.com",
+    "phone": "(036)-743-6934"
+  },
+  {
+    "id": 6,
+    "image": "https://randomuser.me/api/portraits/men/84.jpg",
+    "first_name": "Ben",
+    "last_name": "Lynch",
+    "department": "Engineering",
+    "email": "ben.lynch@example.com",
+    "phone": "(923)-513-3735"
+  },
+  {
+    "id": 7,
+    "image": "https://randomuser.me/api/portraits/men/83.jpg",
+    "first_name": "Kurt",
+    "last_name": "Diaz",
+    "department": "Engineering",
+    "email": "kurt.diaz@example.com",
+    "phone": "(874)-172-1135"
+  },
+  {
+    "id": 8,
+    "image": "https://randomuser.me/api/portraits/men/78.jpg",
+    "first_name": "Walter",
+    "last_name": "Vargas",
+    "department": "Customer Service",
+    "email": "walter.vargas@example.com",
+    "phone": "(341)-943-8189"
+  },
+  {
+    "id": 9,
+    "image": "https://randomuser.me/api/portraits/men/1.jpg",
+    "first_name": "Troy",
+    "last_name": "Hernandez",
+    "department": "Payroll",
+    "email": "troy.hernandez@example.com",
+    "phone": "(628)-458-6808"
+  },
+  {
+    "id": 10,
+    "image": "https://randomuser.me/api/portraits/women/23.jpg",
+    "first_name": "Stacy",
+    "last_name": "Steward",
+    "department": "Operations",
+    "email": "stacy.steward@example.com",
+    "phone": "(114)-209-4243"
+  }
+]

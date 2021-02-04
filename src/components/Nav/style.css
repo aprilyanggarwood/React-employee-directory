@@ -1,0 +1,31 @@
+.btn{
+
+font-family:cursive ;
+color:white;
+
+}
+
+.navbar{
+
+padding: 1.5rem 1rem;
+margin-bottom: 15px;
+background-color: #e3f2fd ;
+
+}
+
+.filter-dept-select{
+font-family: cursive;
+font-size: 1rem;
+line-height: 1.5;
+border-radius: .25rem;
+
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    
+    padding: 5px;
+}
