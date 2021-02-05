@@ -3,7 +3,7 @@ import "./style.css";
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer style={{ marginTop: "20px", fontFamily: "cursive" }}>
       <span>Employee Directory 2021</span>
     </footer>
   );

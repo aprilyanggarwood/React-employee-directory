@@ -5,11 +5,17 @@ color:white;
 
 }
 
+.btn:hover {
+    color:white;
+}
+
 .navbar{
 
 padding: 1.5rem 1rem;
 margin-bottom: 15px;
 background-color: #e3f2fd ;
+border-bottom-right-radius: 10px;
+border-bottom-left-radius: 10px;
 
 }
 

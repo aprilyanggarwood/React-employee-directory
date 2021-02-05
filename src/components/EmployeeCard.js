@@ -2,22 +2,29 @@ import React from "react";
 
 function EmployeeCard({ image, name, department, email, phone }) {
   return (
-    <div className="justify-between">
-      <img
-        style={{ maxWidth: "60px" }}
-        className=""
-        src={image}
-        alt="employee"
-      />
-      <span>
+    <div className="row">
+      {/* <div class="col-md-1"></div> */}
+      <div class="col-md-2">
+        <img
+          // style={{ maxWidth: "60px" }}
+          className="image"
+          src={image}
+          alt="employee"
+        />
+      </div>
+      <div class="col-md-2">
+        <p className="">{name}</p>
+      </div>
+      <div class="col-md-2">
         <p>{department}</p>
-      </span>
-      <span>
+      </div>
+      <div class="col-md-3">
         <p className="">{email}</p>
-      </span>
-      <span>
+      </div>
+      <div class="col-md-2">
         <p>{phone}</p>
-      </span>
+      </div>
+      <div class="col-md-1 col1"></div>
     </div>
   );
 }

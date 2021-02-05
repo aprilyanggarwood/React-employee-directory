@@ -1,34 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Navbar from "./components/Nav/Navbar";
 import Container from "./components/Container/Container";
 import Footer from "./components/Footer/Footer";
 import EmployeeCardList from "./components/EmployeeCardList";
-// import employeesData from "./data/employees.json";
-
-import Loader from "./components/Loader/Loader";
-import axios from "axios";
+import employeesData from "./data/employees.json";
 
 function App() {
-  const [employees, setEmployees] = useState({ employeesData: [] });
+  const [employees, setEmployees] = useState({ employeesData });
   const [filterDept, setFilterDept] = useState("");
   const [modifier, setModifier] = useState(1);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    axios
-      .get("https://randomuser.me/api/?results=1000&nat=us")
-      .then(({ data }) => {
-        console.log(data.results);
-        const mappedData = data.results.map((a) => ({
-          ...a,
-          first_name: a.name.first,
-          last_name: a.name.last,
-          image: a.picture.large,
-        }));
-        setEmployees({ employeesData: mappedData });
-        setLoading(false);
-      });
-  }, []);
   function sortUsers(key) {
     let sortEmployees = employees.employeesData.sort((a, b) => {
       const aVal = a[key];
@@ -39,42 +21,42 @@ function App() {
     setEmployees({ employeesData: sortEmployees });
   }
 
-  // function sortFirstName() {
-  //   let sortEmployees = [...employees].sort((a, b) => {
-  //     let fa = a.last_name.toLowerCase(),
-  //       fb = b.last_name.toLowerCase();
+  function sortFirstName() {
+    let sortEmployees = [...employees].sort((a, b) => {
+      let fa = a.last_name.toLowerCase(),
+        fb = b.last_name.toLowerCase();
 
-  //     if (fa < fb) {
-  //       return -1;
-  //     }
-  //     if (fa > fb) {
-  //       return 1;
-  //     }
-  //     return 0;
-  //   });
+      if (fa < fb) {
+        return -1;
+      }
+      if (fa > fb) {
+        return 1;
+      }
+      return 0;
+    });
 
-  //   setEmployees(sortEmployees);
-  // }
+    setEmployees(sortEmployees);
+  }
 
-  // function sortLastName() {
-  //   let sortEmployees = [...employees].sort((a, b) => {
-  //     let fa = a.last_name.toLowerCase(),
-  //       fb = b.last_name.toLowerCase();
+  function sortLastName() {
+    let sortEmployees = [...employees].sort((a, b) => {
+      let fa = a.last_name.toLowerCase(),
+        fb = b.last_name.toLowerCase();
 
-  //     if (fa < fb) {
-  //       return -1;
-  //     }
-  //     if (fa > fb) {
-  //       return 1;
-  //     }
-  //     return 0;
-  //   });
+      if (fa < fb) {
+        return -1;
+      }
+      if (fa > fb) {
+        return 1;
+      }
+      return 0;
+    });
 
-  //   setEmployees(sortEmployees);
-  // }
+    setEmployees(sortEmployees);
+  }
 
   const filterByDept = (event) => {
-    let filterEmployees = employees.employeesData.filter((employee) => {
+    let filterEmployees = employeesData.filter((employee) => {
       return employee.department === event.target.value;
     });
 
@@ -84,7 +66,7 @@ function App() {
 
   return (
     <div>
-      {loading && <Loader />}
+      {/* {loading && <Loader />} */}
       <Container>
         <div className="jumbotron">
           <h1 className="title">Employee Directory</h1>
@@ -98,3 +80,23 @@ function App() {
 }
 
 export default App;
+
+// import React, { useState, useEffect } from "react";
+// import Loader from "./components/Loader/Loader";
+// import axios from "axios";
+
+//   useEffect(async () => {
+//   const response = await axios
+//       .get("https://randomuser.me/api/?results=200&nat=us")
+//       .then(({ async (data) => }) => {
+//         console.log(data.results);
+//         const mappedData = await data.results.map((a) => ({
+//           ...a,
+//           first_name: a.name.first,
+//           last_name: a.name.last,
+//           image: a.picture.large,
+//         }));
+//         setEmployees({ employeesData: mappedData });
+//         setLoading(false);
+//       });
+//   }, []);
