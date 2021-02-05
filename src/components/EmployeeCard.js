@@ -3,14 +3,8 @@ import React from "react";
 function EmployeeCard({ image, name, department, email, phone }) {
   return (
     <div className="row">
-      {/* <div class="col-md-1"></div> */}
       <div class="col-md-2">
-        <img
-          // style={{ maxWidth: "60px" }}
-          className="image"
-          src={image}
-          alt="employee"
-        />
+        <img className="image" src={image} alt="employee" />
       </div>
       <div class="col-md-2">
         <p className="">{name}</p>
